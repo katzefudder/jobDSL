@@ -1,6 +1,6 @@
 folder('Apache') {
     jobs {
-        'Meine Projekte/Hallo Welt echoer'
+        name('Meine Projekte/Hallo Welt echoer')
     }
 }
 
