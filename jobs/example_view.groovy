@@ -20,10 +20,10 @@ listView('Docker Introduction') {
 
 
 freeStyleJob('Schnitzel/Hallo Welt echoer') {
-    description(readFileFromWorkspace('README.md'))
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
+    description(readFileFromWorkspace('README.md'))
     triggers {
         scm('*/15 * * * *')
     }
@@ -34,10 +34,10 @@ freeStyleJob('Schnitzel/Hallo Welt echoer') {
 
 
 freeStyleJob('Schnitzel/Docker Hands on Apache') {
-    description(readFileFromWorkspace('README.md'))
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
+    description(readFileFromWorkspace('README.md'))
     triggers {
         scm('*/15 * * * *')
     }
