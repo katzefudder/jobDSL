@@ -1,4 +1,4 @@
-folder('Meine_Projekte')
+folder('Meine Projekte')
 
 freeStyleJob('Meine_Projekte/Docker Hands on Apache') {
     scm {
