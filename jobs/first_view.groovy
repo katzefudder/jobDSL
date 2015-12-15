@@ -1,5 +1,7 @@
 folder('Apache') {
-
+    jobs {
+        'Meine Projekte/Hallo Welt echoer'
+    }
 }
 
 folder('LAMP') {
