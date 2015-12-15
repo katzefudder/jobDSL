@@ -1,7 +1,7 @@
 listView('Docker Introduction'){
-    folder('Apache') {
+    folder('Docker Introduction/Apache') {
         jobs {
-            freeStyleJob('Docker Hands on Apache') {
+            freeStyleJob('Docker Introduction/Apache/Docker Hands on Apache') {
                 scm {
                     git('https://github.com/katzefudder/docker-hands-on-lamp.git')
                 }
