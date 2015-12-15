@@ -1,3 +1,3 @@
 listView('Builds A'){
-    selectedFolder('Meine Projekte')
+    selectedJob('Meine Projekte')
 }
