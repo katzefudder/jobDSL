@@ -20,7 +20,7 @@ listView('Docker Introduction'){
 
 freeStyleJob('Apache/Hallo Welt echoer') {
     scm {
-        git('git://github.com/jgritman/aws-sdk-test.git')
+        git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
     triggers {
         scm('*/15 * * * *')
