@@ -6,7 +6,7 @@ folder('Schnitzel') {
 
 }
 
-listView('Docker Introduction'){
+listView('Docker Introduction') {
     jobs {
         name('Apache')
         name('LAMP')
@@ -20,6 +20,7 @@ listView('Docker Introduction'){
 
 
 freeStyleJob('Schnitzel/Hallo Welt echoer') {
+    description(readFileFromWorkspace('README.md'))
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
@@ -33,6 +34,7 @@ freeStyleJob('Schnitzel/Hallo Welt echoer') {
 
 
 freeStyleJob('Schnitzel/Docker Hands on Apache') {
+    description(readFileFromWorkspace('README.md'))
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
