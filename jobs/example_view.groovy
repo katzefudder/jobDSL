@@ -9,7 +9,7 @@ folder('Schnitzel') {
 listView('Docker Introduction') {
     jobs {
         name('Apache')
-        name('LAMP')
+        name('Schnitzel')
     }
     columns {
         status()
@@ -19,11 +19,11 @@ listView('Docker Introduction') {
 }
 
 
-freeStyleJob('Schnitzel/Hallo Welt echoer') {
+freeStyleJob('Schnitzel/Docker Hands on LAMP') {
+    description 'Lorem Ipsum Dolor sit amet'
     scm {
-        git('https://github.com/katzefudder/docker-hands-on-apache.git')
+        git('https://github.com/katzefudder/docker-hands-on-lamp.git')
     }
-    description(readFileFromWorkspace('README.md'))
     triggers {
         scm('*/15 * * * *')
     }
@@ -34,10 +34,10 @@ freeStyleJob('Schnitzel/Hallo Welt echoer') {
 
 
 freeStyleJob('Schnitzel/Docker Hands on Apache') {
+    description 'Lorem Ipsum Dolor sit amet'
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
-    description(readFileFromWorkspace('README.md'))
     triggers {
         scm('*/15 * * * *')
     }
