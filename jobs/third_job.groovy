@@ -1,4 +1,4 @@
-folder('Meine_Projekte/Hallo Welt echoer') {
+freeStyleJob('Meine_Projekte/Hallo Welt echoer') {
     scm {
         git('git://github.com/jgritman/aws-sdk-test.git')
     }
