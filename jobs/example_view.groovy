@@ -2,7 +2,7 @@ folder('Apache') {
 
 }
 
-folder('LAMP') {
+folder('Schnitzel') {
 
 }
 
@@ -19,7 +19,7 @@ listView('Docker Introduction'){
 }
 
 
-freeStyleJob('Apache/Hallo Welt echoer') {
+freeStyleJob('Schnitzel/Hallo Welt echoer') {
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
@@ -32,7 +32,7 @@ freeStyleJob('Apache/Hallo Welt echoer') {
 }
 
 
-freeStyleJob('LAMP/Docker Hands on Apache') {
+freeStyleJob('Schnitzel/Docker Hands on Apache') {
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
