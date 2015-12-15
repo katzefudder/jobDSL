@@ -14,6 +14,7 @@ listView('Docker Introduction'){
     columns {
         status()
         name()
+        weather()
     }
 }
 
