@@ -11,4 +11,8 @@ listView('Docker Introduction'){
         name('Apache')
         name('LAMP')
     }
+    columns {
+        status()
+        name()
+    }
 }
