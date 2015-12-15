@@ -2,8 +2,13 @@ folder('Apache') {
 
 }
 
-listView('Docker Introduction') {
-    folder {
-        'Apache'
+folder('LAMP') {
+
+}
+
+listView('Docker Introduction'){
+    jobs {
+        name('Apache')
+        name('LAMP')
     }
 }
