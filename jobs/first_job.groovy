@@ -1,6 +1,6 @@
 folder('Meine Projekte')
 
-freeStyleJob('Meine_Projekte/Docker Hands on Apache') {
+freeStyleJob('Meine Projekte/Docker Hands on Apache') {
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
