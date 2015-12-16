@@ -1,5 +1,6 @@
 folder('build_pipelines') {
     description 'Build Pipelines'
+    displayName 'Build Pipelines'
 }
 
 listView('Docker Introduction') {
