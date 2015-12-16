@@ -1,5 +1,5 @@
 folder('build_pipelines') {
-    description 'Build Pipelines'
+    description 'Build Pipelines for demonstration purposes'
     displayName 'Build Pipelines'
 }
 
@@ -16,6 +16,7 @@ listView('Docker Introduction') {
 
 freeStyleJob('build_pipelines/first_job') {
     description 'Lorem Ipsum Dolor sit amet'
+    displayName 'First Job'
     scm {
         git('https://github.com/katzefudder/docker-hands-on-lamp.git')
     }
@@ -29,6 +30,7 @@ freeStyleJob('build_pipelines/first_job') {
 
 freeStyleJob('build_pipelines/second_job') {
     description 'Lorem Ipsum Dolor sit amet'
+    displayName 'Second Job'
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
     }
