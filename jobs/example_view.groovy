@@ -1,15 +1,10 @@
-folder('Apache') {
-
-}
-
-folder('Schnitzel') {
-
+folder('build_pipelines') {
+    description 'Build Pipelines'
 }
 
 listView('Docker Introduction') {
     jobs {
-        name('Apache')
-        name('Schnitzel')
+        name('build_pipelines')
     }
     columns {
         status()
@@ -18,8 +13,7 @@ listView('Docker Introduction') {
     }
 }
 
-
-freeStyleJob('Schnitzel/Docker Hands on LAMP') {
+freeStyleJob('build_pipelines/first_job') {
     description 'Lorem Ipsum Dolor sit amet'
     scm {
         git('https://github.com/katzefudder/docker-hands-on-lamp.git')
@@ -32,8 +26,7 @@ freeStyleJob('Schnitzel/Docker Hands on LAMP') {
     }
 }
 
-
-freeStyleJob('Schnitzel/Docker Hands on Apache') {
+freeStyleJob('build_pipelines/second_job') {
     description 'Lorem Ipsum Dolor sit amet'
     scm {
         git('https://github.com/katzefudder/docker-hands-on-apache.git')
